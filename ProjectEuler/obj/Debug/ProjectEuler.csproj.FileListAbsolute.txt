@@ -31,3 +31,14 @@ C:\Users\lee_an\Desktop\PE\ProjectEuler\obj\Debug\ProjectEuler.csprojResolveAsse
 C:\Users\lee_an\Desktop\PE\ProjectEuler\obj\Debug\ProjectEuler.Form1.resources
 C:\Users\lee_an\Desktop\PE\ProjectEuler\obj\Debug\ProjectEuler.Properties.Resources.resources
 C:\Users\lee_an\Desktop\PE\ProjectEuler\obj\Debug\ProjectEuler.csproj.GenerateResource.Cache
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEuler\bin\Debug\ProjectEuler.exe.config
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEuler\bin\Debug\ProjectEuler.exe
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEuler\bin\Debug\ProjectEuler.pdb
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEuler\bin\Debug\ProjectEulerLibrary.dll
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEuler\bin\Debug\ProjectEulerLibrary.pdb
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEuler\obj\Debug\ProjectEuler.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEuler\obj\Debug\ProjectEuler.Form1.resources
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEuler\obj\Debug\ProjectEuler.Properties.Resources.resources
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEuler\obj\Debug\ProjectEuler.csproj.GenerateResource.Cache
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEuler\obj\Debug\ProjectEuler.exe
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEuler\obj\Debug\ProjectEuler.pdb

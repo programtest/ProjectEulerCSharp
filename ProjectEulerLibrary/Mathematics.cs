@@ -12,6 +12,16 @@ namespace ProjectEulerLibrary
     public class Mathematics
     {
         /// <summary>
+        /// Method determines if an integer is a palindrome or not.
+        /// </summary>
+        /// <param name="num">Possible palindromic number.</param>
+        /// <returns>Bool indicating if a number is a palindrome or not.</returns>
+        public static bool IsPalindrome(int num)
+        {
+            return true;
+        }
+
+        /// <summary>
         /// Method gets all multiples of a number which are less than a specified maximum value.
         /// </summary>
         /// <param name="num">Number for which the multiples will be calculated.</param>

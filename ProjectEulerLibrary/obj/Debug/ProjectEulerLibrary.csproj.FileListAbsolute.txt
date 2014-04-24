@@ -11,3 +11,8 @@ C:\Users\lee_an\Desktop\PE\ProjectEulerLibrary\bin\Debug\ProjectEulerLibrary.dll
 C:\Users\lee_an\Desktop\PE\ProjectEulerLibrary\bin\Debug\ProjectEulerLibrary.pdb
 C:\Users\lee_an\Desktop\PE\ProjectEulerLibrary\obj\Debug\ProjectEulerLibrary.dll
 C:\Users\lee_an\Desktop\PE\ProjectEulerLibrary\obj\Debug\ProjectEulerLibrary.pdb
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEulerLibrary\bin\Debug\ProjectEulerLibrary.dll
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEulerLibrary\bin\Debug\ProjectEulerLibrary.pdb
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEulerLibrary\obj\Debug\ProjectEulerLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEulerLibrary\obj\Debug\ProjectEulerLibrary.dll
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEulerLibrary\obj\Debug\ProjectEulerLibrary.pdb

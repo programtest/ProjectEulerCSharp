@@ -25,3 +25,12 @@ C:\Users\lee_an\Desktop\PE\ProjectEulerLibrary.Tests\bin\Debug\nunit.framework.x
 C:\Users\lee_an\Desktop\PE\ProjectEulerLibrary.Tests\obj\Debug\ProjectEulerLibrary.Tests.csprojResolveAssemblyReference.cache
 C:\Users\lee_an\Desktop\PE\ProjectEulerLibrary.Tests\obj\Debug\ProjectEulerLibrary.Tests.dll
 C:\Users\lee_an\Desktop\PE\ProjectEulerLibrary.Tests\obj\Debug\ProjectEulerLibrary.Tests.pdb
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEulerLibrary.Tests\bin\Debug\ProjectEulerLibrary.Tests.dll
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEulerLibrary.Tests\bin\Debug\ProjectEulerLibrary.Tests.pdb
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEulerLibrary.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEulerLibrary.Tests\bin\Debug\ProjectEulerLibrary.dll
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEulerLibrary.Tests\bin\Debug\ProjectEulerLibrary.pdb
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEulerLibrary.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEulerLibrary.Tests\obj\Debug\ProjectEulerLibrary.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEulerLibrary.Tests\obj\Debug\ProjectEulerLibrary.Tests.dll
+C:\Users\Andrew\Desktop\ProjectEulerCSharp\ProjectEulerLibrary.Tests\obj\Debug\ProjectEulerLibrary.Tests.pdb
