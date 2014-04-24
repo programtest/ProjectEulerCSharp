@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler", "ProjectEuler\ProjectEuler.csproj", "{953F2290-1495-4FAE-84A4-A2B17480AA00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.Tests", "ProjectEuler.Tests\ProjectEuler.Tests.csproj", "{876AAE5A-B2EA-4980-A026-9C79B9B3D5ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEulerLibrary", "ProjectEulerLibrary\ProjectEulerLibrary.csproj", "{7AA3027C-D2AC-40B0-A42D-CD7F2E6E110D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEulerLibrary.Tests", "ProjectEulerLibrary.Tests\ProjectEulerLibrary.Tests.csproj", "{3502F184-461F-4E2E-B3CC-BD20841B6A2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{953F2290-1495-4FAE-84A4-A2B17480AA00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{953F2290-1495-4FAE-84A4-A2B17480AA00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{953F2290-1495-4FAE-84A4-A2B17480AA00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{953F2290-1495-4FAE-84A4-A2B17480AA00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{876AAE5A-B2EA-4980-A026-9C79B9B3D5ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{876AAE5A-B2EA-4980-A026-9C79B9B3D5ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{876AAE5A-B2EA-4980-A026-9C79B9B3D5ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{876AAE5A-B2EA-4980-A026-9C79B9B3D5ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AA3027C-D2AC-40B0-A42D-CD7F2E6E110D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AA3027C-D2AC-40B0-A42D-CD7F2E6E110D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AA3027C-D2AC-40B0-A42D-CD7F2E6E110D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AA3027C-D2AC-40B0-A42D-CD7F2E6E110D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3502F184-461F-4E2E-B3CC-BD20841B6A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3502F184-461F-4E2E-B3CC-BD20841B6A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3502F184-461F-4E2E-B3CC-BD20841B6A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3502F184-461F-4E2E-B3CC-BD20841B6A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
