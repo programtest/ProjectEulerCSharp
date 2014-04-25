@@ -104,5 +104,30 @@ namespace ProjectEulerLibrary.Tests
         {
             Assert.IsTrue(Mathematics.IsPalindrome(23455432));
         }
+
+        // GetMaxNum() method.
+        [Test]
+        public void GetMaxNum_NullList_ThrowsArgumentException()
+        {
+            Assert.Throws<ArgumentException>(() => Mathematics.GetMaxNum(null));
+        }
+
+        [Test]
+        public void GetMaxNum_EmptyList_ThrowsArgumentException()
+        {
+            Assert.Throws<ArgumentException>(() => Mathematics.GetMaxNum(new List<int>()));
+        }
+
+        [Test]
+        public void GetMaxNum_ListWithNums_ReturnsMaxNum()
+        {
+            Assert.AreEqual(999, Mathematics.GetMaxNum(new List<int>() { 1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 999, 2, 1, 2, 3, 4 } ));
+        }
+
+        [Test]
+        public void GetMaxNum_ListWithSameNums_ReturnsSameNum()
+        {
+            Assert.AreEqual(999, Mathematics.GetMaxNum(new List<int>() { 999, 999, 999, 999 }));
+        }
     }
 }

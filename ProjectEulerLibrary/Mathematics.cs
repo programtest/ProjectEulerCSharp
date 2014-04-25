@@ -12,6 +12,42 @@ namespace ProjectEulerLibrary
     public class Mathematics
     {
         /// <summary>
+        /// Method calculates the least common multiple from a list of numbers.
+        /// </summary>
+        /// <param name="nums">List of numbers.</param>
+        /// <returns>Least common multiple.</returns>
+        public static int GetLeastCommonMultiple(List<int> nums)
+        {
+            List<int> numTracker = nums.ToList();
+            return -1;
+        }
+
+        /// <summary>
+        /// Method gets the maximum number from a list of numbers.
+        /// </summary>
+        /// <param name="nums">List of numbers.</param>
+        /// <returns>Maximum number.</returns>
+        public static int GetMaxNum(List<int> nums)
+        {
+            // Check input.
+            if (nums == null || nums.Count == 0)
+            {
+                throw new ArgumentException("nums list cannot be null or empty.", "nums");
+            }
+
+            int max = int.MinValue;
+            foreach (int num in nums)
+            {
+                if (num > max)
+                {
+                    max = num;
+                }
+            }
+
+            return max;
+        }
+
+        /// <summary>
         /// Method determines if an integer is a palindrome or not.  In this method, negative numbers are not considered to be palindromic.
         /// </summary>
         /// <param name="num">Possible palindromic number.</param>
