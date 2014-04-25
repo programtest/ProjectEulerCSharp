@@ -12,12 +12,37 @@ namespace ProjectEulerLibrary
     public class Mathematics
     {
         /// <summary>
-        /// Method determines if an integer is a palindrome or not.
+        /// Method determines if an integer is a palindrome or not.  In this method, negative numbers are not considered to be palindromic.
         /// </summary>
         /// <param name="num">Possible palindromic number.</param>
         /// <returns>Bool indicating if a number is a palindrome or not.</returns>
         public static bool IsPalindrome(int num)
         {
+            // Check input.
+            if (num < 0)
+            {
+                return false;
+            }
+
+            // Convert number to string for easier indexing.
+            string numAsString = num.ToString();
+
+            // Set left, right pointers.
+            int left = 0;
+            int right = numAsString.Length - 1;
+
+            // While left pointer is less than right pointer.
+            while (left < right)
+            {
+                // Compare characters.  If they are different return false.
+                if (numAsString[left] != numAsString[right])
+                {
+                    return false;
+                }
+                left++;
+                right--;
+            }
+
             return true;
         }
 

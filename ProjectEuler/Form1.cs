@@ -22,7 +22,8 @@ namespace ProjectEuler
         private void button1_Click(object sender, EventArgs e)
         {
             //List<int> test = Mathematics.GetPrimeNums(1000);
-            int test = Problem3.Solve();
+            //int test = Problem3.Solve();
+            int product = Problem4.Solve();
         }
     }
 }

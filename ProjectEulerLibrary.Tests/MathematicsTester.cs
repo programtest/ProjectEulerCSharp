@@ -85,5 +85,24 @@ namespace ProjectEulerLibrary.Tests
         {
             CollectionAssert.AreEqual(new List<int>() { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 }, Mathematics.GetFibonacciNums(35));
         }
+
+        // IsPalindrome() method.
+        [Test]
+        public void IsPalindrome_SingleDigitNumber_ReturnsTrue()
+        {
+            Assert.IsTrue(Mathematics.IsPalindrome(0));
+        }
+
+        [Test]
+        public void IsPalindrome_NegativeNumber_ReturnsFalse()
+        {
+            Assert.IsFalse(Mathematics.IsPalindrome(-1));
+        }
+
+        [Test]
+        public void IsPalindrome_PalindromeNumber_ReturnsTrue()
+        {
+            Assert.IsTrue(Mathematics.IsPalindrome(23455432));
+        }
     }
 }
