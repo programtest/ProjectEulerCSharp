@@ -46,7 +46,6 @@ namespace ProjectEulerLibrary
             return true;
         }
 
-
         /// <summary>
         /// Method gets all multiples of a number which are less than a specified maximum value.
         /// </summary>
