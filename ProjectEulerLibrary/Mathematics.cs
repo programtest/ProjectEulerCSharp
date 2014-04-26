@@ -11,6 +11,8 @@ namespace ProjectEulerLibrary
     /// </summary>
     public class Mathematics
     {
+        public static int ERROR = -1;
+
         /// <summary>
         /// Method calculates the least common multiple from a list of numbers.
         /// </summary>
@@ -18,8 +20,42 @@ namespace ProjectEulerLibrary
         /// <returns>Least common multiple.</returns>
         public static int GetLeastCommonMultiple(List<int> nums)
         {
+            // Check input.
+            
+            // Create a list to track the multiples of each number.
             List<int> numTracker = nums.ToList();
+            
+            // Let each of the nums "catch up" to the max.
+
             return -1;
+        }
+
+        /// <summary>
+        /// Method gets the index of the maximum number in a list of numbers.  If there are multiple maximum numbers in the list,
+        /// the method will return the index of the first occurrence of the maximum number.
+        /// </summary>
+        /// <param name="nums">List of numbers.</param>
+        /// <returns>Index of the maximum number.</returns>
+        public static int GetMaxNumIndex(List<int> nums)
+        {
+            // Check input.
+            if (nums == null || nums.Count == 0)
+            {
+                throw new ArgumentException("nums list cannot be null or empty.", "nums");
+            }
+
+            int max = int.MinValue;
+            int maxIndex = -1;
+            for(int i = 0; i < nums.Count; i++)
+            {
+                if (nums[i] > max)
+                {
+                    max = nums[i];
+                    maxIndex = i;
+                }
+            }
+
+            return maxIndex;
         }
 
         /// <summary>

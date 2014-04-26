@@ -129,5 +129,30 @@ namespace ProjectEulerLibrary.Tests
         {
             Assert.AreEqual(999, Mathematics.GetMaxNum(new List<int>() { 999, 999, 999, 999 }));
         }
+
+        // GetMaxNumIndex() method.
+        [Test]
+        public void GetMaxNumIndex_NullList_ThrowsArgumentException()
+        {
+            Assert.Throws<ArgumentException>(() => Mathematics.GetMaxNumIndex(null));
+        }
+
+        [Test]
+        public void GetMaxNumIndex_EmptyList_ThrowsArgumentException()
+        {
+            Assert.Throws<ArgumentException>(() => Mathematics.GetMaxNumIndex(new List<int>()));
+        }
+
+        [Test]
+        public void GetMaxNumIndex_ListWithNums_ReturnsMaxIndex()
+        {
+            Assert.AreEqual(10, Mathematics.GetMaxNumIndex(new List<int>() { 1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 999, 2, 1, 2, 3, 4 }));
+        }
+
+        [Test]
+        public void GetMaxNumIndex_ListWithMultipleMaxValues_ReturnsFirstMaxIndex()
+        {
+            Assert.AreEqual(1, Mathematics.GetMaxNumIndex(new List<int>() { 1, 2, 2, 2, 2, 2, 2, 2 }));
+        }
     }
 }
