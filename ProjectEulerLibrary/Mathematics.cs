@@ -15,19 +15,72 @@ namespace ProjectEulerLibrary
 
         /// <summary>
         /// Method calculates the least common multiple from a list of numbers.
+        /// Pre-assumptions: The resulting least common multiple is less than the max possible integer value (2^32).
         /// </summary>
         /// <param name="nums">List of numbers.</param>
         /// <returns>Least common multiple.</returns>
         public static int GetLeastCommonMultiple(List<int> nums)
         {
             // Check input.
+            if (nums == null || nums.Count == 0)
+            {
+                throw new ArgumentException("nums list cannot be null or empty.", "nums");
+            }
             
             // Create a list to track the multiples of each number.
             List<int> numTracker = nums.ToList();
             
-            // Let each of the nums "catch up" to the max.
+            // Get the max index and value.
+            int maxValue = GetMaxNum(nums);
+            int maxIndex = GetMaxNumIndex(nums);
 
-            return -1;
+            // Let each of the nums "catch up" to the max.
+            while (true)
+            {
+                // Increment each element until it is equal to or greater than max value.
+                for (int i = 0; i < numTracker.Count; i++)
+                {
+                    while (numTracker[i] < maxValue)
+                    {
+                        numTracker[i] += nums[i];
+                    }
+                }
+
+                // If all elements are equal to the max value, then max value is the least common multiple.
+                if (AreElementsEqualToNum(numTracker, maxValue))
+                {
+                    break;
+                }
+
+                maxValue = numTracker[maxIndex] += nums[maxIndex];
+            }
+
+            return maxValue;
+        }
+
+        /// <summary>
+        /// Method checks to see if all of the elements in a list are equal to the specified number.
+        /// </summary>
+        /// <param name="nums">List of numbers.</param>
+        /// <param name="comparisonNum">Comparison number.</param>
+        /// <returns>Bool value indicating if all of the elements in a list are equal to the specified number.</returns>
+        public static bool AreElementsEqualToNum(List<int> nums, int comparisonNum)
+        {
+            // Check input.
+            if (nums == null || nums.Count == 0)
+            {
+                throw new ArgumentException("nums list cannot be null or empty.", "nums");
+            }
+
+            foreach (int num in nums)
+            {
+                if (num != comparisonNum)
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         /// <summary>

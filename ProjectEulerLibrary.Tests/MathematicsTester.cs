@@ -154,5 +154,49 @@ namespace ProjectEulerLibrary.Tests
         {
             Assert.AreEqual(1, Mathematics.GetMaxNumIndex(new List<int>() { 1, 2, 2, 2, 2, 2, 2, 2 }));
         }
+
+        // AreElementsEqualToNum() method.
+        [Test]
+        public void AreElementsEqualToNum_NullList_ThrowsArgumentException()
+        {
+            Assert.Throws<ArgumentException>(() => Mathematics.AreElementsEqualToNum(null, 0));
+        }
+
+        [Test]
+        public void AreElementsEqualToNum_EmptyList_ThrowsArgumentException()
+        {
+            Assert.Throws<ArgumentException>(() => Mathematics.AreElementsEqualToNum(new List<int>(), 0));
+        }
+
+        [Test]
+        public void AreElementsEqualToNum_ListWithElementsEqualToNum_ReturnsTrue()
+        {
+            Assert.IsTrue(Mathematics.AreElementsEqualToNum(new List<int>() { 2, 2, 2, 2, 2, 2, 2 }, 2));
+        }
+
+        [Test]
+        public void AreElementsEqualToNum_ListWithElementNotEqualToNum_ReturnsFalse()
+        {
+            Assert.IsFalse(Mathematics.AreElementsEqualToNum(new List<int>() { 2, 1, 2, 2, 2, 2, 2 }, 2));
+        }
+
+        // GetLeastCommonMultiple() method.
+        [Test]
+        public void GetLeastCommonMultiple_ListOfNumbers_ReturnsLeastCommonMultiple()
+        {
+            Assert.AreEqual(2520, Mathematics.GetLeastCommonMultiple(new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }));
+        }
+
+        [Test]
+        public void GetLeastCommonMultiple_NullList_ThrowsArgumentException()
+        {
+            Assert.Throws<ArgumentException>(() => Mathematics.GetLeastCommonMultiple(null));
+        }
+
+        [Test]
+        public void GetLeastCommonMultiple_EmptyList_ThrowsArgumentException()
+        {
+            Assert.Throws<ArgumentException>(() => Mathematics.GetLeastCommonMultiple(new List<int>()));
+        }
     }
 }

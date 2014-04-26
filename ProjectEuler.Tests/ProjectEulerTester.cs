@@ -57,5 +57,16 @@ namespace ProjectEuler.Tests
         {
             Assert.AreEqual(906609, Problem4.Solve());
         }
+
+        /// <summary>
+        /// 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+        /// What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+        /// Answer: 232792560
+        /// </summary>
+        [Test]
+        public void Prob5()
+        {
+            Assert.AreEqual(232792560, Problem5.Solve());
+        }
     }
 }
