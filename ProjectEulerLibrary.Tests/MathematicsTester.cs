@@ -198,5 +198,55 @@ namespace ProjectEulerLibrary.Tests
         {
             Assert.Throws<ArgumentException>(() => Mathematics.GetLeastCommonMultiple(new List<int>()));
         }
+
+        // IsEven() method.
+        [Test]
+        public void IsEven_PositiveEvenNumber_ReturnsTrue()
+        {
+            Assert.IsTrue(Mathematics.IsEven(2));
+        }
+
+        [Test]
+        public void IsEven_Zero_ReturnsTrue()
+        {
+            Assert.IsTrue(Mathematics.IsEven(0));
+        }
+
+        [Test]
+        public void IsEven_NegativeEvenNumber_ReturnsTrue()
+        {
+            Assert.IsTrue(Mathematics.IsEven(-2));
+        }
+
+        [Test]
+        public void IsEven_OddNumber_ReturnsFalse()
+        {
+            Assert.IsFalse(Mathematics.IsEven(-3));
+        }
+
+        // IsOdd() method.
+        [Test]
+        public void IsOdd_PositiveOddNumber_ReturnsTrue()
+        {
+            Assert.IsTrue(Mathematics.IsOdd(1));
+        }
+
+        [Test]
+        public void IsOdd_Zero_ReturnsFalse()
+        {
+            Assert.IsFalse(Mathematics.IsOdd(0));
+        }
+
+        [Test]
+        public void IsOdd_NegativeOddNumber_ReturnsTrue()
+        {
+            Assert.IsTrue(Mathematics.IsOdd(-3));
+        }
+
+        [Test]
+        public void IsOdd_EvenNumber_ReturnsFalse()
+        {
+            Assert.IsFalse(Mathematics.IsOdd(-2));
+        }
     }
 }

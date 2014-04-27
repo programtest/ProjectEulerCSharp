@@ -14,6 +14,36 @@ namespace ProjectEulerLibrary
         public static int ERROR = -1;
 
         /// <summary>
+        /// Method determines if a number is even.
+        /// </summary>
+        /// <param name="num">Number.</param>
+        /// <returns>Bool indicating if a number is even or not.</returns>
+        public static bool IsEven(int num)
+        {
+            if (num % 2 == 0)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Method determines if a number is odd.
+        /// </summary>
+        /// <param name="num">Number.</param>
+        /// <returns>Bool indicating if a number is odd or not.</returns>
+        public static bool IsOdd(int num)
+        {
+            if (Math.Abs(num % 2) == 1)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
         /// Method calculates the least common multiple from a list of numbers.
         /// Pre-assumptions: The resulting least common multiple is less than the max possible integer value (2^32).
         /// </summary>
