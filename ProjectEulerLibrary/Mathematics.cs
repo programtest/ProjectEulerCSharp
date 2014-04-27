@@ -14,13 +14,43 @@ namespace ProjectEulerLibrary
         public static int ERROR = -1;
 
         /// <summary>
+        /// Method calculates the sum of the numbers from a specified starting number to a specified
+        /// ending number.
+        /// </summary>
+        /// <param name="startNum">Number to start calculating the sum from.</param>
+        /// <param name="stopNum">Number to stop calculating the sum from.</param>
+        /// <returns>Sum of consecutive numbers.</returns>
+        public static int GetSumOfConsecutiveNumbers(int startNum, int stopNum)
+        {
+            // Check inputs.
+            if (stopNum < startNum)
+            {
+                throw new ArgumentOutOfRangeException("stopNum must be greater than or equal to startNum", "stopNum");
+            }
+            if (startNum <= 0)
+            {
+                throw new ArgumentOutOfRangeException("startNum", "startNum must consist of a positive integer.");
+            }
+
+            // If amount of consecutive numbers is even.
+            if (IsEven(stopNum - startNum + 1))
+            {
+                return (startNum + stopNum) * (stopNum - startNum + 1) / 2;
+            }
+            else // Amount of consecutive numbers is odd.
+            {
+                return ((startNum + stopNum) * (stopNum - startNum) / 2) + ((startNum + stopNum) / 2);
+            }
+        }
+
+        /// <summary>
         /// Method calculates the sum of the squares from a specified starting number to a specified
-        /// stopping number.
+        /// ending number.
         /// </summary>
         /// <param name="startNum">Number to start calculating squares from.</param>
         /// <param name="stopNum">Number to stop calculating squares from.</param>
         /// <returns>Sum of squares.</returns>
-        public static int SumOfConsecutivePositiveSquares(int startNum, int stopNum)
+        public static int GetSumOfConsecutivePositiveSquares(int startNum, int stopNum)
         {
             // Check inputs.
             if (stopNum < startNum)

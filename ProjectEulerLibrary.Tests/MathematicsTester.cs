@@ -249,41 +249,72 @@ namespace ProjectEulerLibrary.Tests
             Assert.IsFalse(Mathematics.IsOdd(-2));
         }
 
-        // SumOfConsecutivePositiveSquares() method.
+        // GetSumOfConsecutivePositiveSquares() method.
         [Test]
-        public void SumOfConsecutivePositiveSquares_StopNumGreaterThanStartNum_ReturnsSumOfSquares()
+        public void GetSumOfConsecutivePositiveSquares_StopNumGreaterThanStartNum_ReturnsSumOfSquares()
         {
-            Assert.AreEqual(385, Mathematics.SumOfConsecutivePositiveSquares(1, 10));
+            Assert.AreEqual(385, Mathematics.GetSumOfConsecutivePositiveSquares(1, 10));
         }
 
         [Test]
-        public void SumOfConsecutivePositiveSquares_SameStartNumAndStopNum_ReturnsSumOfSquares()
+        public void GetSumOfConsecutivePositiveSquares_SameStartNumAndStopNum_ReturnsSumOfSquares()
         {
-            Assert.AreEqual(100, Mathematics.SumOfConsecutivePositiveSquares(10, 10));
+            Assert.AreEqual(100, Mathematics.GetSumOfConsecutivePositiveSquares(10, 10));
         }
 
         [Test]
-        public void SumOfConsecutivePositiveSquares_StopNumLessThanStartNum_ThrowsArgumentOutOfRangeException()
+        public void GetSumOfConsecutivePositiveSquares_StopNumLessThanStartNum_ThrowsArgumentOutOfRangeException()
         {
-            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.SumOfConsecutivePositiveSquares(2, 1));
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.GetSumOfConsecutivePositiveSquares(2, 1));
         }
 
         [Test]
-        public void SumOfConsecutivePositiveSquares_LargeStopNum_ThrowsArgumentOutOfRangeException()
+        public void GetSumOfConsecutivePositiveSquares_LargeStopNum_ThrowsArgumentOutOfRangeException()
         {
-            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.SumOfConsecutivePositiveSquares(2, (int)Math.Sqrt(int.MaxValue) + 1));
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.GetSumOfConsecutivePositiveSquares(2, (int)Math.Sqrt(int.MaxValue) + 1));
         }
 
         [Test]
-        public void SumOfConsecutivePositiveSquares_NegativeStartNum_ThrowsArgumentOutOfRangeException()
+        public void GetSumOfConsecutivePositiveSquares_NegativeStartNum_ThrowsArgumentOutOfRangeException()
         {
-            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.SumOfConsecutivePositiveSquares(-1, 1));
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.GetSumOfConsecutivePositiveSquares(-1, 1));
         }
 
         [Test]
-        public void SumOfConsecutivePositiveSquares_ZeroForStartNum_ThrowsArgumentOutOfRangeException()
+        public void GetSumOfConsecutivePositiveSquares_ZeroForStartNum_ThrowsArgumentOutOfRangeException()
         {
-            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.SumOfConsecutivePositiveSquares(0, 1));
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.GetSumOfConsecutivePositiveSquares(0, 1));
+        }
+
+        // GetSumOfConsecutiveNumbers() method.
+        [Test]
+        public void GetSumOfConsecutiveNumbers_ValidStartNumAndStopNum_ReturnsSumOfConsecutiveNumbers()
+        {
+            Assert.AreEqual(55, Mathematics.GetSumOfConsecutiveNumbers(1, 10));
+        }
+
+        [Test]
+        public void GetSumOfConsecutiveNumbers_SameStartNumAndStopNum_ReturnsSumOfConsecutiveNumbers()
+        {
+            Assert.AreEqual(9, Mathematics.GetSumOfConsecutiveNumbers(9, 9));
+        }
+
+        [Test]
+        public void GetSumOfConsecutiveNumbers_NegativeStartNum_ThrowsArgumentOutOfRangeException()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.GetSumOfConsecutiveNumbers(-1, 1));
+        }
+
+        [Test]
+        public void GetSumOfConsecutiveNumbers_ZeroForStartNum_ThrowsArgumentOutOfRangeException()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.GetSumOfConsecutiveNumbers(0, 1));
+        }
+
+        [Test]
+        public void GetSumOfConsecutiveNumbers_StopNumLessThanStartNum_ThrowsArgumentOutOfRangeException()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.GetSumOfConsecutiveNumbers(2, 1));
         }
     }
 }
