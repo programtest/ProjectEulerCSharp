@@ -14,6 +14,39 @@ namespace ProjectEulerLibrary
         public static int ERROR = -1;
 
         /// <summary>
+        /// Method calculates the sum of the squares from a specified starting number to a specified
+        /// stopping number.
+        /// </summary>
+        /// <param name="startNum">Number to start calculating squares from.</param>
+        /// <param name="stopNum">Number to stop calculating squares from.</param>
+        /// <returns>Sum of squares.</returns>
+        public static int SumOfConsecutivePositiveSquares(int startNum, int stopNum)
+        {
+            // Check inputs.
+            if (stopNum < startNum)
+            {
+                throw new ArgumentOutOfRangeException("stopNum must be greater than or equal to startNum", "stopNum");
+            }
+            if (startNum <= 0)
+            {
+                throw new ArgumentOutOfRangeException("startNum", "startNum must consist of a positive integer.");
+            }
+            if (stopNum > Math.Sqrt(int.MaxValue))
+            {
+                throw new ArgumentOutOfRangeException("stopNum", @"stopNum must be less than or equal to the square root of the 
+                    maximum possible int value (2^32).");
+            }
+
+            int sum = 0;
+            for (int i = startNum; i <= stopNum; i++)
+            {
+                sum += i * i;
+            }
+
+            return sum;
+        }
+
+        /// <summary>
         /// Method determines if a number is even.
         /// </summary>
         /// <param name="num">Number.</param>

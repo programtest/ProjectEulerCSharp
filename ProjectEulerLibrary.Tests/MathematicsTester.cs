@@ -248,5 +248,42 @@ namespace ProjectEulerLibrary.Tests
         {
             Assert.IsFalse(Mathematics.IsOdd(-2));
         }
+
+        // SumOfConsecutivePositiveSquares() method.
+        [Test]
+        public void SumOfConsecutivePositiveSquares_StopNumGreaterThanStartNum_ReturnsSumOfSquares()
+        {
+            Assert.AreEqual(385, Mathematics.SumOfConsecutivePositiveSquares(1, 10));
+        }
+
+        [Test]
+        public void SumOfConsecutivePositiveSquares_SameStartNumAndStopNum_ReturnsSumOfSquares()
+        {
+            Assert.AreEqual(100, Mathematics.SumOfConsecutivePositiveSquares(10, 10));
+        }
+
+        [Test]
+        public void SumOfConsecutivePositiveSquares_StopNumLessThanStartNum_ThrowsArgumentOutOfRangeException()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.SumOfConsecutivePositiveSquares(2, 1));
+        }
+
+        [Test]
+        public void SumOfConsecutivePositiveSquares_LargeStopNum_ThrowsArgumentOutOfRangeException()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.SumOfConsecutivePositiveSquares(2, (int)Math.Sqrt(int.MaxValue) + 1));
+        }
+
+        [Test]
+        public void SumOfConsecutivePositiveSquares_NegativeStartNum_ThrowsArgumentOutOfRangeException()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.SumOfConsecutivePositiveSquares(-1, 1));
+        }
+
+        [Test]
+        public void SumOfConsecutivePositiveSquares_ZeroForStartNum_ThrowsArgumentOutOfRangeException()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.SumOfConsecutivePositiveSquares(0, 1));
+        }
     }
 }
