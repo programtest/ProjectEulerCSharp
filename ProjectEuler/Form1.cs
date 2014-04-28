@@ -23,7 +23,7 @@ namespace ProjectEuler
         {
             //List<int> test = Mathematics.GetPrimeNums(1000);
             //int test = Problem3.Solve();
-            int product = Problem5.Solve();
+            long product = Problem6.Solve();
         }
     }
 }
