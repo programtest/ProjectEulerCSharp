@@ -14,6 +14,21 @@ namespace ProjectEulerLibrary
         public static int ERROR = -1;
 
         /// <summary>
+        /// Method determines if a floating point number is an integer.
+        /// </summary>
+        /// <param name="num">Floating point number.</param>
+        /// <returns>Bool indicating if a floating point number is an integer or not.</returns>
+        public static bool IsInteger(double num)
+        {
+            if (num % 1 == 0)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
         /// Method calculates the sum of the numbers from a specified starting number to a specified
         /// ending number.
         /// </summary>

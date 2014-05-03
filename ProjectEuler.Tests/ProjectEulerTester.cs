@@ -120,5 +120,29 @@ namespace ProjectEuler.Tests
         {
             Assert.AreEqual(40824, Problem8.Solve());
         }
+
+        /// <summary>
+        /// A Pythagorean triplet is a set of three natural numbers, a less than b less than c, for which, a^2 + b^2 = c^2.
+        /// For example, 3^2 + 4^2 = 9 + 16 = 25 = 5^2.
+        /// There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+        /// Find the product abc.
+        /// Answer: 31875000
+        /// </summary>
+        [Test]
+        public void Prob9()
+        {
+            Assert.AreEqual(31875000, Problem9.Solve());
+        }
+
+        /// <summary>
+        /// The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+        /// Find the sum of all the primes below two million.
+        /// Answer: 142913828922
+        /// </summary>
+        [Test]
+        public void Prob10()
+        {
+            Assert.AreEqual(142913828922, Problem10.Solve());
+        }
     }
 }

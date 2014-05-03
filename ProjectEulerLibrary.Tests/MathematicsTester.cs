@@ -316,5 +316,24 @@ namespace ProjectEulerLibrary.Tests
         {
             Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.GetSumOfConsecutiveNumbers(2, 1));
         }
+
+        // IsInteger() method.
+        [Test]
+        public void IsInteger_IntegerValue_ReturnsTrue()
+        {
+            Assert.IsTrue(Mathematics.IsInteger(2));
+        }
+
+        [Test]
+        public void IsInteger_Zero_ReturnsTrue()
+        {
+            Assert.IsTrue(Mathematics.IsInteger(0));
+        }
+
+        [Test]
+        public void IsInteger_NonIntegerValue_ReturnsFalse()
+        {
+            Assert.IsFalse(Mathematics.IsInteger(2.1));
+        }
     }
 }
