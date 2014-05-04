@@ -335,5 +335,86 @@ namespace ProjectEulerLibrary.Tests
         {
             Assert.IsFalse(Mathematics.IsInteger(2.1));
         }
+
+        // GetTriangleNums() method.
+        [Test]
+        public void GetTriangleNums_NegativeNValue_ThrowsArgumentOutOfRangeException()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.GetTriangleNums(-1));
+        }
+
+        [Test]
+        public void GetTriangleNums_ZeroForNValue_ThrowsArgumentOutOfRangeException()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.GetTriangleNums(0));
+        }
+
+        [Test]
+        public void GetTriangleNums_OneForNValue_ReturnsNTriangleNums()
+        {
+            CollectionAssert.AreEqual(new List<int>() { 1 }, Mathematics.GetTriangleNums(1));
+        }
+
+        [Test]
+        public void GetTriangleNums_ValidNValue_ReturnsNTriangleNums()
+        {
+            CollectionAssert.AreEqual(new List<int>() { 1, 3, 6, 10, 15, 21, 28 }, Mathematics.GetTriangleNums(7));
+        }
+
+        // GetFactors() method.
+        [Test]
+        public void GetFactors_NegativeNumValue_ThrowsArgumentOutOfRangeException()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.GetFactors(-1));
+        }
+
+        [Test]
+        public void GetFactors_ZeroNumValue_ThrowsArgumentOutOfRangeException()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.GetFactors(0));
+        }
+
+        [Test]
+        public void GetFactors_OneForNumValue_ReturnsListWithOne()
+        {
+            CollectionAssert.AreEqual(new List<int>() { 1 }, Mathematics.GetFactors(1));
+        }
+
+        [Test]
+        public void GetFactors_ValidNumValue_ReturnsFactors()
+        {
+            CollectionAssert.AreEqual(new List<int>() { 1, 2, 3, 4, 6, 8, 12, 24 }, Mathematics.GetFactors(24));
+        }
+
+        // GetNumOfFactors() method.
+        [Test]
+        public void GetNumOfFactors_NegativeNumValue_ThrowsArgumentOutOfRangeException()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.GetNumOfFactors(-1));
+        }
+
+        [Test]
+        public void GetNumOfFactors_ZeroNumValue_ThrowsArgumentOutOfRangeException()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => Mathematics.GetNumOfFactors(0));
+        }
+
+        [Test]
+        public void GetNumOfFactors_OneForNumValue_ReturnsOne()
+        {
+            Assert.AreEqual(1, Mathematics.GetNumOfFactors(1));
+        }
+
+        [Test]
+        public void GetNumOfFactors_NumValueWithPerfectSquareRoot_ReturnsNumOfFactors()
+        {
+            Assert.AreEqual(9, Mathematics.GetNumOfFactors(36));
+        }
+
+        [Test]
+        public void GetNumOfFactors_NumValueWithoutPerfectSquareRoot_ReturnsNumOfFactors()
+        {
+            Assert.AreEqual(6, Mathematics.GetNumOfFactors(18));
+        }
     }
 }
