@@ -416,5 +416,24 @@ namespace ProjectEulerLibrary.Tests
         {
             Assert.AreEqual(6, Mathematics.GetNumOfFactors(18));
         }
+
+        // GetNumOfDigits() method.
+        [Test]
+        public void GetNumOfDigits_ZeroForNumValue_ReturnsOne()
+        {
+            Assert.AreEqual(1, Mathematics.GetNumOfDigits(0));
+        }
+
+        [Test]
+        public void GetNumOfDigits_NegativeNumValue_ReturnsNumOfDigits()
+        {
+            Assert.AreEqual(3, Mathematics.GetNumOfDigits(-100));
+        }
+
+        [Test]
+        public void GetNumOfDigits_PositiveNumValue_ReturnsNumOfDigits()
+        {
+            Assert.AreEqual(8, Mathematics.GetNumOfDigits(12345678));
+        }
     }
 }

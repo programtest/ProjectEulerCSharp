@@ -7,11 +7,28 @@ using System.Threading.Tasks;
 namespace ProjectEulerLibrary
 {
     /// <summary>
-    /// Class contains methods related to mathematical calculations.
+    /// Class contains methods reBlated to mathematical calculations.
     /// </summary>
     public class Mathematics
     {
         public static int ERROR = -1;
+
+        /// <summary>
+        /// Method gets the number of digits in a number.
+        /// </summary>
+        /// <param name="num">Number for which the number of digits will be calculated.</param>
+        /// <returns>Number of digits.</returns>
+        public static int GetNumOfDigits(long num)
+        {
+            if (num >= 0)
+            {
+                return num.ToString().Length;
+            }
+            else
+            {
+                return num.ToString().Length - 1;
+            }
+        }
 
         /// <summary>
         /// Method calculates the number of factors for a given number.
